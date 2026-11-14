@@ -365,3 +365,35 @@ Ek function reverseArray(arr) banao jo array ke elements ko reverse order mein p
 // }
 
 // reverseArray([10, 20, 30, 40, 50]);
+
+
+let cities = ["karachi","multan","lahore","dehli","newyork","mumbai","peshawer"];
+
+cities.forEach(function(val){
+    console.log(val)
+})
+
+function checkAge(age){
+    if(age < 18) return "bachy ho abhi tum";
+    return "bary ho gai";
+}
+
+console.log(checkAge(16));
+console.log(checkAge(26));
+
+function abcd(val){
+   val()
+}
+
+abcd(function (){
+    console.log("tum nhi samjh sakty!")
+})
+
+function sayHello(){
+    console.log("bola na tum nhi samjh sakty !")
+}
+
+function abc (val){
+   val();
+}
+abc(sayHello)
