@@ -367,33 +367,51 @@ Ek function reverseArray(arr) banao jo array ke elements ko reverse order mein p
 // reverseArray([10, 20, 30, 40, 50]);
 
 
-let cities = ["karachi","multan","lahore","dehli","newyork","mumbai","peshawer"];
+// let cities = ["karachi","multan","lahore","dehli","newyork","mumbai","peshawer"];
 
-cities.forEach(function(val){
-    console.log(val)
-})
+// cities.forEach(function(val){
+//     console.log(val)
+// })
 
-function checkAge(age){
-    if(age < 18) return "bachy ho abhi tum";
-    return "bary ho gai";
+// function checkAge(age){
+//     if(age < 18) return "bachy ho abhi tum";
+//     return "bary ho gai";
+// }
+
+// console.log(checkAge(16));
+// console.log(checkAge(26));
+
+// function abcd(val){
+//    val()
+// }
+
+// abcd(function (){
+//     console.log("tum nhi samjh sakty!")
+// })
+
+// function sayHello(){
+//     console.log("bola na tum nhi samjh sakty !")
+// }
+
+// function abc (val){
+//    val();
+// }
+// abc(sayHello)
+
+//  Ek function banayein jo array mein se largest number find kare?
+
+function findLargest(arr) {
+    let largest = arr[0];
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > largest) {
+            largest = arr[i];
+        }
+    }
+
+    return largest;
 }
 
-console.log(checkAge(16));
-console.log(checkAge(26));
+let numbers = [10, 25, 5, 80, 45];
 
-function abcd(val){
-   val()
-}
-
-abcd(function (){
-    console.log("tum nhi samjh sakty!")
-})
-
-function sayHello(){
-    console.log("bola na tum nhi samjh sakty !")
-}
-
-function abc (val){
-   val();
-}
-abc(sayHello)
+console.log(findLargest(numbers));
