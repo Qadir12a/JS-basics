@@ -400,18 +400,28 @@ Ek function reverseArray(arr) banao jo array ke elements ko reverse order mein p
 
 //  Ek function banayein jo array mein se largest number find kare?
 
-function findLargest(arr) {
-    let largest = arr[0];
+// function findLargest(arr) {
+//     let largest = arr[0];
 
-    for (let i = 1; i < arr.length; i++) {
-        if (arr[i] > largest) {
-            largest = arr[i];
-        }
-    }
+//     for (let i = 1; i < arr.length; i++) {
+//         if (arr[i] > largest) {
+//             largest = arr[i];
+//         }
+//     }
 
-    return largest;
-}
+//     return largest;
+// }
 
-let numbers = [10, 25, 5, 80, 45];
+// let numbers = [10, 25, 5, 80, 45];
 
-console.log(findLargest(numbers));
+// console.log(findLargest(numbers));
+
+// write a program to calculate the average of three integers. the number shuld been entered by user. 
+
+let num1 = parseInt(prompt("Enter first integer:"));
+let num2 = parseInt(prompt("Enter second integer:"));
+let num3 = parseInt(prompt("Enter third integer:"));
+
+let average = (num1 + num2 + num3) / 3;
+
+console.log("The average is: " + average);
