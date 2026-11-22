@@ -418,10 +418,25 @@ Ek function reverseArray(arr) banao jo array ke elements ko reverse order mein p
 
 // write a program to calculate the average of three integers. the number shuld been entered by user. 
 
-let num1 = parseInt(prompt("Enter first integer:"));
-let num2 = parseInt(prompt("Enter second integer:"));
-let num3 = parseInt(prompt("Enter third integer:"));
+// let num1 = parseInt(prompt("Enter first integer:"));
+// let num2 = parseInt(prompt("Enter second integer:"));
+// let num3 = parseInt(prompt("Enter third integer:"));
 
-let average = (num1 + num2 + num3) / 3;
+// let average = (num1 + num2 + num3) / 3;
 
-console.log("The average is: " + average);
+// console.log("The average is: " + average);
+
+// write a program to calculate simple interst .
+
+
+let principal = 10000;
+let rate = 5;
+let time = 2;
+
+// Calculate Simple Interest
+let simpleInterest = (principal * rate * time) / 100;
+
+console.log("Principal Amount: " + principal);
+console.log("Rate of Interest: " + rate + "%");
+console.log("Time: " + time + " years");
+console.log("Simple Interest: " + simpleInterest);
