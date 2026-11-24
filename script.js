@@ -429,14 +429,26 @@ Ek function reverseArray(arr) banao jo array ke elements ko reverse order mein p
 // write a program to calculate simple interst .
 
 
-let principal = 10000;
-let rate = 5;
-let time = 2;
+// let principal = 10000;
+// let rate = 5;
+// let time = 2;
 
-// Calculate Simple Interest
-let simpleInterest = (principal * rate * time) / 100;
+// // Calculate Simple Interest
+// let simpleInterest = (principal * rate * time) / 100;
 
-console.log("Principal Amount: " + principal);
-console.log("Rate of Interest: " + rate + "%");
-console.log("Time: " + time + " years");
-console.log("Simple Interest: " + simpleInterest);
+// console.log("Principal Amount: " + principal);
+// console.log("Rate of Interest: " + rate + "%");
+// console.log("Time: " + time + " years");
+// console.log("Simple Interest: " + simpleInterest);
+
+
+// Ek JavaScript function banao jo check kare ke diya gaya word palindrome hai ya nahi.
+
+function isPalindrome(word) {
+    let reversed = word.split("").reverse().join("");
+    return word === reversed;
+}
+
+console.log(isPalindrome("madam"));
+console.log(isPalindrome("hello"));
+console.log(isPalindrome("level"));
