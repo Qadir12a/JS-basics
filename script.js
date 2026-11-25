@@ -444,11 +444,25 @@ Ek function reverseArray(arr) banao jo array ke elements ko reverse order mein p
 
 // Ek JavaScript function banao jo check kare ke diya gaya word palindrome hai ya nahi.
 
-function isPalindrome(word) {
-    let reversed = word.split("").reverse().join("");
-    return word === reversed;
+// function isPalindrome(word) {
+//     let reversed = word.split("").reverse().join("");
+//     return word === reversed;
+// }
+
+// console.log(isPalindrome("madam"));
+// console.log(isPalindrome("hello"));
+// console.log(isPalindrome("level"));
+
+// create a random joke genrator .
+function randomJoke() {
+  const jokes = [
+    "Why do programmers love dark mode? Because light attracts bugs!",
+    "Why did the developer go broke? Because he used up all his cache!",
+    "There are 10 types of people: those who understand binary and those who don't.",
+    "Why was the JavaScript developer sad? Because he didn't Node how to Express himself."
+  ];
+
+  return jokes[Math.floor(Math.random() * jokes.length)];
 }
 
-console.log(isPalindrome("madam"));
-console.log(isPalindrome("hello"));
-console.log(isPalindrome("level"));
+console.log(randomJoke());
